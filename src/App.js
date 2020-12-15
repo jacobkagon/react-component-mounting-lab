@@ -13,11 +13,10 @@ class App extends Component {
   //Your code here:
 
 
-
-
-
-
-
+  componentDidMount() {
+    this.handleAddTimer()
+  }
+  
 
 
   // No need to modify anything in render or the class methods below
@@ -55,6 +54,8 @@ class App extends Component {
       timerIDs: prevState.timerIDs.filter(timer_id => timer_id !== id)
     }))
   }
+
+  
 
 
 }
